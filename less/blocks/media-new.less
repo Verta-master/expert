@@ -23,6 +23,23 @@
   .history__item:nth-child(3) {
     margin-bottom: 40px;
   }
+  .header-new .yandex__btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1022px) {
+  .header-new .header__top {
+    flex-wrap: wrap;
+  }
+  .header-new .header__buttons {
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .header-new .header__content {
+    margin-top: 10px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 766px) {
@@ -37,6 +54,23 @@
     display: block;
     width: 100%;
     top: 70%;
+  }
+  .header-new .header__top {
+    display: block;
+  }
+  .header-new .header__buttons,
+  .header-new .header__menu-top {
+    display: none;
+  }
+  .header-new .sitecities_panel {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .header-new .sitecities_current_city {
+    background-image: none;
+  }
+  .header-new .header-contacts__item:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
@@ -55,5 +89,16 @@
   .chrono__video span {
     font-size: 10px;
     line-height: 1.2;
+  }
+  .header-new .header-contacts {
+    display: block;
+  }
+  .header__call {
+    height: 36px;
+    margin-top: 20px;
+    padding-left: 30px;
+    border-left: 0;
+    background-position: left center;
+    background-size: 20px auto;
   }
 }

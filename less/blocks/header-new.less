@@ -1,0 +1,243 @@
+.header-new {
+  padding: 0;
+  background-color: rgba(255,255,255,0);
+  box-shadow: none;
+}
+
+#container {
+  box-shadow: none;
+}
+
+.page {
+  box-shadow: rgba(0,0,0,.117647) 0 1px 6px, rgba(0,0,0,.117647) 0 1px 4px;
+}
+
+.header-new .header__top {
+  border-bottom: 1px solid rgba(65, 133, 164, 0.2);
+}
+
+.header-new .top-menu>li a {
+  color: #4185a4;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header-new .top-menu>li.active {
+  &::after {
+    content: "";
+    width: 9px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    background-image: url(../img/icons/arrow-down.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.header-new .sitecities_current_city {
+  padding-left: 25px;
+  color: #969696;
+  font-size: 14px;
+  background: url(../img/icons/location.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 14px 17px;
+}
+
+.header-new .sitecities_current_city .sitecities_current_link {
+  color: #4185a4;
+  
+  &::after {
+    bottom: -3px;
+    border-bottom: 1px dashed #000;
+  }
+}
+
+.header__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 244px;
+  height: 44px;
+  padding: 0;
+  padding-left: 25px;
+  color: #81211b;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  border-radius: 3px;
+  background-color: rgb(255, 199, 54);
+  border-bottom: 0;
+  text-shadow: none;
+  transition: ease-out 0.3s;
+  
+  span {
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -25px;
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/icons/tick.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &:hover,
+  &:active {
+    background-color: #cfedf4;
+    box-shadow: rgba(0,0,0,.117647) 0 1px 6px;
+    transition: ease-out 0.3s;
+  }
+}
+
+.header-new .yandex__btn {
+  flex-direction: column;
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #969696;
+  }
+}
+
+.header-new .yandex__btn iframe,
+.header-new .yandex__rating__review {
+  margin: 0;
+}
+
+.header-new .header__main {
+  padding: 20px 0;
+}
+
+.header-new .logo {
+  width: 311px;
+  height: auto;
+  max-width: 100%;
+  
+  img {
+    display: block;
+  }
+}
+
+.header-new .header-contacts__item {
+  display: block;
+  padding: 0;
+  padding-right: 30px;
+  margin-top: 0;
+  text-align: left;
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #969696;
+  }
+}
+
+.header-new .header-contacts__item:not(:last-child) {
+  padding-right: 30px;
+}
+
+.header-new .header-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__phone {
+  display: block;
+  text-decoration: none;
+  color: #221d1d;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    color: #e87005;
+    transition: ease-out 0.3s;
+  }
+}
+
+.header__link {
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &--email {
+    a {
+      color: #81211b;
+      font-size: 15px;
+      text-decoration: none;
+      border-bottom: 1px solid #81211b;
+    }
+    
+    &::before {
+      width: 17px;
+      height: 13px;
+      background-image: url(../img/icons/mail.png);
+    }
+  }
+  
+  &--call {
+    a {
+      color: #4185a4;
+      font-size: 14px;
+      text-decoration: none;
+      border-bottom: 1px dotted #4185a4;
+    }
+    
+    &::before {
+      width: 16px;
+      height: 16px;
+      background-image: url(../img/icons/phone.png);
+    }
+  }
+  
+  &:hover a,
+  &:active a {
+    border-color: rgba(255,255,255,0);
+  }
+}
+
+.header__call {
+  display: block;
+  height: 73px;
+  padding-left: 35px;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #969696;
+  text-decoration: none;
+  border-left: 1px solid rgba(65, 133, 164, 0.2);
+  background-image: url(../img/icons/call.png);
+  background-repeat: no-repeat;
+  background-size: 34px 36px;
+  background-position: left 35px bottom;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    color: #e87005;
+    transition: ease-out 0.3s;
+  }
+}
