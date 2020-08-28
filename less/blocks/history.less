@@ -1,0 +1,130 @@
+#content h1 {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  color: #4185a4 !important;
+}
+
+h2 {
+  color: #4185a4 !important;;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+}
+
+.history__list {
+  position: relative;
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background-color: rgb(255, 199, 54);
+  }
+}
+
+.history__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+  padding-right: 60px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    right: -9px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 199, 54);
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 31px;
+    height: 3px;
+    background-color: rgb(255, 199, 54);
+  }
+  
+  &:nth-child(2n) {
+    top: 70px;
+    padding-right: 0;
+    padding-left: 60px;
+    border-right: 0;
+    
+    &::before {
+      left: -6px;
+      right: auto;
+    }
+    
+    &::after {
+      left: 0;
+      right: auto;
+    }
+  }
+  
+  &:nth-child(4) {
+    top: 100px;
+  }
+  
+  &:nth-child(6) {
+    top: 105px;
+  }
+  
+  &:nth-child(3) {
+    margin-bottom: 70px;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.history__icon {
+  .reset();
+  width: 95px;
+  text-align: center;
+  
+  figcaption {
+    margin-top: 10px;
+    color: #81211b;
+    font-size: 41px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    span {
+      display: block;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      text-transform: none;
+    }
+  }
+}
+
+.history__info {
+  width: ~"calc(100% - 130px)";
+  font-size: 16px;
+  line-height: 25px;
+}

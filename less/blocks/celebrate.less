@@ -1,0 +1,44 @@
+.celebrate {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 43px 50px;
+  background-image: url(../img/images/shape.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    bottom: -65px;
+    left: 67%;
+    width: 46px;
+    height: 101px;
+    background-image: url(../img/icons/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.celebrate__icon {
+  width: 189px;
+  .reset();
+}
+
+.celebrate__text {
+  width: ~"calc(100% - 215px)";
+  font-size: 16px;
+  line-height: 26px;
+  
+  p {
+    margin: 0;
+  }
+  
+  span {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
