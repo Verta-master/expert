@@ -1,0 +1,95 @@
+1) Разметка:
+
+<div class="advert">
+  <div class="advert__text">Оформление сертификата СТ-1<span>Консультации бесплатны</span></div>
+  <div class="advert__price">от <b>23 000 ₽</b></div>
+  <a href="#" class="advert__btn">заказать</a>
+</div>
+
+2) Стили:
+
+.advert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  border: 2px solid #ffc736;
+}
+.advert__text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.advert__text span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+}
+.advert__price {
+  margin-left: auto;
+  margin-right: 30px;
+  font-size: 20px;
+}
+.advert__btn {
+  width: 141px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #7d1b1d;
+  border-radius: 3px;
+  background-color: #ffc736;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.advert__btn:hover {
+  background-color: #cfedf4;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px;
+          box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+@media (max-width: 1200px) {
+  .advert {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advert__text {
+    width: 100%;
+  }
+}
+@media (max-width: 1022px) {
+  .advert__text {
+    text-align: center;
+  }
+  .advert__price {
+    margin: 0;
+  }
+  .advert {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

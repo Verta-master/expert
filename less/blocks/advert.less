@@ -1,0 +1,73 @@
+.advert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  border: 2px solid rgb(255, 199, 54);
+}
+
+.advert__text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  
+  span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+  }
+}
+
+.advert__price {
+  margin-left: auto;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.advert__btn {
+  width: 141px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #7d1b1d;
+  border-radius: 3px;
+  background-color: rgb(255, 199, 54);
+  transition: ease-out 0.3s;
+  
+  &:hover {
+    background-color: #cfedf4;
+    box-shadow: rgba(0,0,0,.117647) 0 1px 6px;
+    transition: ease-out 0.3s;
+  }
+}
+
+@media (max-width: 1200px) {
+  .advert {
+    flex-wrap: wrap;
+  }
+  .advert__text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1022px) {
+  .advert__text {
+    text-align: center;
+  }
+  .advert__price {
+    margin: 0;
+  }
+  .advert {
+    flex-direction: column;
+  }
+}
